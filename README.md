@@ -29,12 +29,12 @@ $count = (int)trim(fgets(STDIN));
 //②$count回だけ繰り返す*<br>
 for ($i = 0; $i < $count; $i++) {<br>
     *// ③for文の中で「データ」を読み取る*<br>
-    $num = (int)trim(fgets(STDIN));<br>
+    $num = (int)trim(fgets(STDIN));<br><br>
     *// 1回目：2行目の「10」が$numに入る<br>
     // 2回目：3行目の「15」が$numに入る<br>
     // 3回目：4行目の「8」が$numに入る<br><br>
     // ④$numを使って何か処理する*<br>
-    echo $num . "\n";
+    echo $num . "\n";<br>
 }
 
 ---
