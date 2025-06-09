@@ -3,6 +3,15 @@
 ## June 9, 2025
 
 - **DockerインストールとApache起動**
+**Dockerの基本を理解し、PHP環境を構築する準備**
+
+1. **Dockerインストール**
+2. **Dockerの基本操作**
+    - **docker run hello-worldを実行**
+    - **「Hello from Docker!」との表示確認**
+3. **Apacheコンテナの起動**
+    - **docker run --name my-apache -p 8080:80 -d httpdを実行**
+    - **ブラウザでhttp://localhost:8080に「It works!」との表示確認**
 - **VMWare Fusion（Mac）でAlmaLinux仮想マシンを構築（参考図書：Linux標準教科書Ver4.0.0）**
     - 選定理由：PCがMacbook Apple M1 ProでありApple silicon搭載モデルであるためVirtualBoxの使用が不可で、無料で使用可能なソフトウェアとしてVMWare、UTMのうちVMWareを選択しインストールした
     - Arm用AlmaLinuxイメージをダウンロードし、仮想マシン作成・インストール完了
