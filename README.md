@@ -1,8 +1,8 @@
 # 学びの記録
 
-# June 12, 2025 StudyLog
+## June 12, 2025 StudyLog
 
-# XAMPPのMySQLが起動しない問題とその解決
+## XAMPPのMySQLが起動しない問題とその解決
 
 ## 状況
 
