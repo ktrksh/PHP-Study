@@ -108,6 +108,66 @@ var_dump();　//echoがHTMLに書き込むのに対し、var_dump()は型の情�
 
 →比較が誤っているとき：FALSE
 
+**比較演算**：2つの値からBool型の値を作り出す（Int型の値2つからBool型の値を作ったり、String型の値2つからBool型の値を作ったりする。※論理和、論理積は、Bool型の値2つからBool型の値を作る）
+
+→比較が正しいとき：TRUE
+
+→比較が誤っているとき：FALSE
+
+```php
+    <?php
+    if (TRUE || FALSE) {
+        echo 'TRUEのときしか出ない';
+        echo '<br>';
+    }
+    echo 'if文の外';
+    echo '<br>';
+    echo '<br>';
+
+    var_dump(1 < 2); // true
+    echo '<br>';
+    var_dump(1 > 2); // false
+    echo '<br>';
+    var_dump(1 <= 1); // true
+    echo '<br>';
+    var_dump(1 == 1); // true
+    echo '<br>';
+    var_dump(1 == 2); // false
+    echo '<br>';
+    var_dump(1 != 2); // true
+    echo '<br>';
+    var_dump(1 != 1); // false
+    echo '<br>';
+    echo '<br>';
+
+    $x = 1;
+    $y = 2;
+    var_dump($x < $y); // true
+    echo '<br>';
+    var_dump($x > $y); // false
+    echo '<br>';
+    var_dump($x <= $y); // true
+    echo '<br>';
+    var_dump($x >= $y); // false
+    echo '<br>';
+    echo '<br>';
+
+    var_dump(1 < 'a'); // true 暗黙の型変換
+    echo '<br>';
+    var_dump(1 > 'a'); // false 暗黙の型変換
+    echo '<br>';
+    //PHPではこういったことも可能だが、基本的に暗黙の変換は行わないのがセオリー
+    echo '<br>';
+
+    var_dump(1==='1'); // false
+    echo '<br>';
+    var_dump(1==='2'); // false
+    echo '<br>';
+    //暗黙の型変換を行わない比較
+    //型も値も合っていないとtrueにならない
+    ?>
+```
+
 # June 12, 2025 StudyLog
 
 - 変数は$で始まり、直後には数字はNG。アンダーバーかアルファベット
