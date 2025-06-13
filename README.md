@@ -1,4 +1,112 @@
 # 学びの記録
+# June 13, 2025 StudyLog
+
+**PHP基礎**
+データ型：文字列(String), 整数(Int), 少数(Float), 論理値(Bool)
+演算：ある値から別の値を作り出すこと
+- 単項演算
+- 二項演算
+```php
+<?php
+echo 3 + 5;
+?>
+```
+- 結合演算
+    ```php
+    <?php
+    	echo ‘今日は ’ . ‘金曜日’;
+    ?>
+    ```
+- 三項演算
+    ```php
+    <?php
+    	echo ‘今日は ’ . ‘金曜日’ . ‘です’;
+    ?>
+    ```
+- 少数型の演算
+    ```php
+    <?php
+    	echo 100-99.6; //結果：0.40000000000001 プログラムで少数型の演算を行うと誤差が生じる
+    ?>
+    ```
+- Bool型(論理値型)
+    - TRUE　FALSE
+    - 論理和
+        ```php
+        $x = TRUE || FALSE; //TRUE
+        //もしくは
+        $x = TRUE or FALSE; //TRUE
+        ```
+    - 論理積
+        ```php
+        $y = TRUE && FALSE; //FALSE
+        //もしくは
+        $y = TRUE and FALSE; //FALSE
+        ```
+    - 否定演算
+        ```php
+        $z = ! FALSE
+        ```
+- NULL型（特殊型で、無を表す）
+
+```php
+$apple_is_red = TRUE;
+$apple_is_blue = FALSE;
+$i_dont_know_apple = NULL;
+```
+
+- キャスト演算（単項演算、型変換）
+
+```php
+var_dump();　//echoがHTMLに書き込むのに対し、var_dump()は型の情報を含むより詳細な情報を知ることができる。デバッグの際に用いる
+
+    <?php
+        var_dump(1); //int(1)
+        echo '<br>';
+
+        var_dump('1'); //string(1) "1"
+        echo '<br>';
+
+        $x = TRUE;
+        var_dump($x); //bool(true)
+        echo '<br>';
+
+        $x = (string) 10; //キャスト演算。Int型の10をString型に変換
+        var_dump($x); //string(2) "10"
+        echo '<br>';
+
+        $x = (int)'10'; //キャスト演算。String型の10をInt型に変換
+        var_dump($x); //int(10)
+        echo '<br>';
+
+        $x = (int)'a'; //キャスト演算。String型のaをInt型に変換
+        var_dump($x); //int(0)
+        echo '<br>';
+
+        $x = (bool)'a'; //キャスト演算。String型のaをbool型に変換
+        var_dump($x); //bool(true)
+        echo '<br>';
+
+        $x = '10' + '10';
+        echo $x; //String型の結合演算にかかわらず20と出力される。（暗黙の型変換）
+    ?>
+```
+
+**暗黙の型変換**を行う言語→**弱い**型付けの言語
+
+**暗黙の型変換**を行わない言語→**強い**型付けの言語
+
+**→暗黙の型変換は**エラーの温床になるので、**基本的には避ける**ようにし、**キャストを行う際は手動**で行う。
+
+→暗黙の型変換を行う言語においては、Bool型とString型の足し算や、Bool型とString型の論理積などが可能になる。結果は複雑に多様なものがあるので、覚えることは不要で都度調べれば良い。
+
+→重要なことは**正しい型でプログラムを書く**こと。　
+
+**比較演算**：2つの値からBool型の値を作り出す（Int型の値2つからBool型の値を作ったり、String型の値2つからBool型の値を作ったりする。※論理和、論理積は、Bool型の値2つからBool型の値を作る）
+
+→比較が正しいとき：TRUE
+
+→比較が誤っているとき：FALSE
 
 # June 12, 2025 StudyLog
 
