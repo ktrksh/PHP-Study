@@ -3,6 +3,103 @@
 # June 14, 2025 StudyLog
 //**break, continue, while, foreach**
 
+**foreach文**
+```php
+    //配列の要素に-の値が含まれているかを知りたいときの例
+    <?php
+    $arr = [12, 34, 22, 65, 64, 67, 9, 12, 677];
+
+    //配列の要素数を取得
+    $num = count($arr);
+
+    $message = '含まれていない';
+
+    //for文
+    for ($i = 0; $i < $num; $i++) {
+        $value = $arr[$i];
+        if ($value < 0) {
+            $message = '含まれている';
+            break; //この時点で処理を打ち切る
+        }
+    }
+    echo $message;
+    echo '<br>';
+    echo '<br>';
+
+    //配列の要素数を取得
+    $num = count($arr);
+
+    $sum = 0;
+
+    for ($i = 0; $i < $num; $i++) {
+        $value = $arr[$i];
+        if ($value % 2 === 1) {
+            continue; //この時点で処理をスキップする。何もせずに、次の処理へ進む。
+            //配列の数が膨大な場合、プログラムのはじめの方にcontinueを書いていると、読み手がスキップする部分について考えなくてよくなったりするので、複雑なプログラムにおいてcontinueによる恩恵が生まれることがある
+        }
+        $sum += $value;
+    }
+    echo $sum;
+    echo '<br>';
+    echo '<br>';
+
+    //while文 上記のfor文と同じ処理
+    $i = 0;
+    while ($i < $num) {
+        $value = $arr[$i];
+        if ($value < 0) {
+            $message = '含まれている';
+            break;
+        }
+        $i++;
+    }
+    echo $message;
+    echo '<br>';
+    echo '<br>';
+    //使い分けとしては、より（見た目が）シンプルに書けるほうの構文を用いれば良い。更新のパターンが複雑なときはfor文よりもwhile文のほうが適している。
+
+    //foreach文
+    $arr = [1, 2, 3, 4, 5];
+
+    foreach($arr as $value) {
+        echo $value;
+        echo '<br>';
+    }
+    echo '<br>';
+
+    //上記のfor文で配列の要素に-の値が含まれているかどうか知りたいときの例をforeachで書き換えると以下のようになる
+    $arr = [12, -34, 22, 65, 64, 67, 9, 12, 677];
+
+    $message = '含まれていない';
+
+    //foreach文
+    foreach($arr as $value) {
+        if ($value < 0) {
+            $message = '含まれている';
+            break;
+        }
+    }
+    echo $message;
+    echo '<br>';
+    echo '<br>';
+    //このようにすっきりとするので、配列から値を取り出すときは、for文よりもforeach文を用いる方が良い。
+
+    //ValueだけでなくKeyも取り出したいときの例
+    $fruits = [
+        'りんご' => 3,
+        'みかん' => 2,
+        'ぶどう' => 6,
+    ];
+
+    foreach($fruits as $key => $value) {
+        echo "{$key}は{$value}個あります。";
+        echo '<br>';
+    }
+    echo '<br>';
+
+    ?>
+
+
 **for文**
 ```php
     <?php
