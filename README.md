@@ -1,7 +1,105 @@
 # 学びの記録
 
 # June 14, 2025 StudyLog
+//**break, continue, while, foreach**
 
+**配列**
+```php
+    <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+    //下記でオレンジという配列に含まれないKeyで呼び出そうとした場合、エラー文を表示させるためのスクリプト
+
+    $a = [
+        NULL => 1,
+        TRUE => 2,
+        2.7 => 3
+    ];
+    var_dump($a); //array(3) { [""]=> int(1) [1]=> int(2) [2]=> int(3) }
+    //Keyに使用できる型は、基本的にIntとStringのみとする。それ以外を用いると、暗黙の型変換が起きる
+    echo '<br>';
+    echo '<br>';
+
+    // $b = [
+    //     ['key' => 'value'] => 1
+    // ];
+    // var_dump($b);
+    //このように連想配列を連想配列のKeyにすると、型変換できずにエラーとなる
+
+    $c = ['田中', '佐藤', '鈴木'];
+    var_dump($c); //array(3) { [0]=> string(6) "田中" [1]=> string(6) "佐藤" [2]=> string(6) "鈴木" }
+    //このようにKeyと=>を省略して記述することで、配列とすることもできる
+    echo '<br>';
+    echo '<br>';
+
+    $d = ['田中', '佐藤', '鈴木', 'たかはし' => '高橋'];
+    var_dump($d); //array(4) { [0]=> string(6) "田中" [1]=> string(6) "佐藤" [2]=> string(6) "鈴木" ["たかはし"]=> string(6) "高橋" }
+    //このように一つだけKeyと=>を入れることも可能だが、このようにするとKeyにIntとStringが混ざることになるので、原則このような書き方はしない
+    echo '<br>';
+    echo '<br>';
+
+    array_push($d, '吉田'); //関数：$dの最後に'吉田'を追加
+    var_dump($d);
+    echo '<br>';
+    echo '<br>';
+
+    array_push($d, '田口', '森田', '武田'); //複数要素追加
+    var_dump($d);
+    echo '<br>';
+    echo '<br>';
+
+    $d[] = '村田'; //要素を一つだけ追加する場合は、この表記でOK。処理もこちらのほうが早い
+    var_dump($d);
+    echo '<br>';
+    echo '<br>';
+
+    $e = ['関口', '加藤', '井口'];
+    $merged = array_merge($d, $e); //2つの配列を結合した新しい配列$mergedを作成する※元の配列には影響しない
+    //このような元の関数に影響を及ぼさない関数を非破壊的な関数という。対象的に破壊的な関数もある。関数を使用するときは、PHPの公式ドキュメントを参照し、どちらかを確認する。
+    var_dump($merged);
+    echo '<br>';
+    echo '<br>';
+
+    array_unshift($e, '佐々木'); //先頭に要素を追加する
+    var_dump($e);
+    echo '<br>';
+    echo '<br>';
+
+    array_unshift($e, '八木', '澤口'); //複数要素を追加する
+    var_dump($e);
+    echo '<br>';
+    echo '<br>';
+
+    $first = array_shift($e); //先頭の要素を削除し、取り出した値を返す
+    var_dump($first);
+    echo '<br>';
+    echo '<br>';
+
+    $last = array_pop($e); //末尾の要素を削除する
+    var_dump($last);
+    echo '<br>';
+    echo '<br>';
+    var_dump($e);
+    echo '<br>';
+    echo '<br>';
+
+
+    $f = [
+        0 => 'ゼロ',
+        100 => 'ヒャク'
+    ];
+    //このように歯抜けでも表示はするが、原則しない。どうしても必要だとい場合はStringにして書く。
+    // $f = [
+    //  '0' => 'ゼロ',
+    //  '100' => 'ヒャク'
+    // ];
+    var_dump($f);
+    echo '<br>';
+    echo '<br>';
+
+    ?>
+
+**配列**
 ```php
     <?php
     error_reporting(E_ALL);
