@@ -3,6 +3,65 @@
 # June 14, 2025 StudyLog
 //**break, continue, while, foreach**
 
+**for文**
+```php
+    <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1'); //下記でオレンジという配列に含まれないKeyで呼び出そうとした場合、エラー文を表示させるためのスクリプト
+
+
+    for ($i = 0; $i < 10; $i++) {
+        echo 'こんにちは' . "<br>";
+    } //処理（初期化;条件;更新）
+    //++は加算子もしくはインクリメント演算子
+    //$i++;
+    //$i=$i+1;
+    //$i+=1; 複合代入演算子
+    //これらは、厳密には異なる意味合いを持つが、基本的に1つずつプラスするという点で同じ意味になり、より簡潔で読みやすい構文表現を提供する機能のことをシンタックスシュガーという
+    echo $i;
+    echo '<br>';
+
+    for ($i = 0; $i < 10; $i++) {
+        $count = (string) $i;
+        echo $count . '回目の繰り返しです';
+        echo '<br>';
+    }
+    echo '<br>';
+
+    for ($i = 0; $i < 10; $i++) {
+        $count = (string) $i;
+        echo "{$count}回目の繰り返しです"; //""の時に限り{}で変数をStringに埋め込める
+        echo '<br>';
+    }
+    echo '<br>';
+
+    for ($i = 0; $i < 10; $i++) {
+        echo "{$i}回目の繰り返しです"; //この記述でも表示はできるが、暗黙の型変換が行われているため、理解せずに使用することは避けるべき
+        echo '<br>';
+    }
+    echo '<br>';
+    $g = [1, 2, 3];
+    echo "{$g}です"; //このように記述するとarray型がString型に暗黙の型変換となり、エラー文も表示される
+    echo '<br>';
+    echo '<br>';
+
+    ?>
+
+    <table border="1">
+        <?php
+        for ($i = 1; $i < 10; $i++) {
+            echo '<tr>';
+            for ($j = 1; $j < 10; $j++) {
+                $x = $i * $j;
+                echo "<td>{$x}</td>";
+            }
+            echo '</tr>';
+        }    //このように記述すると$iが縦の数字、$jが横の数字になり、九九の表になる
+        echo '<br>';
+        echo '<br>';
+        ?>
+    </table>
+
 **配列**
 ```php
     <?php
