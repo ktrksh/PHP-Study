@@ -1,4 +1,4 @@
-# 学びの記録
+# 学習記録
 
 # June 14, 2025 StudyLog
 //**break, continue, while, foreach**
