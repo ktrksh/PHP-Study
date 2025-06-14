@@ -1,4 +1,45 @@
 # 学びの記録
+
+# June 14, 2025 StudyLog
+
+```php
+    <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1'); //下記でオレンジという配列に含まれないKeyで呼び出そうとした場合、エラー文を表示させるためのスクリプト
+
+    $week = [
+        "青色" => "月曜日",
+        "赤色" => "火曜日",
+        "水色" => "水曜日",
+        "黄土色" => "木曜日",
+        "黄色" => "金曜日",
+        "灰色" => "土曜日",
+        "白色" => "日曜日"
+    ];
+    var_dump($week); //array(7) { ["青色"]=> string(9) "月曜日" ["赤色"]=> string(9) "火曜日" ["水色"]=> string(9) "水曜日" ["黄土色"]=> string(9) "木曜日" ["黄色"]=> string(9) "金曜日" ["灰色"]=> string(9) "土曜日" ["白色"]=> string(9) "日曜日" } と、配列内の全ての要素を参照できる
+    echo "<br>";
+    echo "<br>";
+
+    echo $week["水色"]; //水曜日、となりKeyでValueを取り出せる
+    echo "<br>";
+    echo "<br>";
+
+    $week["水色"] = "Wednesday"; //書き換えることができる
+    echo $week["水色"]; //Wednesday"]
+    echo "<br>";
+    echo "<br>";
+
+    echo $week["オレンジ"]; //エラー文が表示される
+    echo "<br>";
+    echo "<br>";
+    
+    $week["オレンジ"] = "架空の曜日"; //新しくKeyを代入することができる
+    echo $week["オレンジ"]; //架空の曜日
+    echo "<br>";
+    echo "<br>";
+    
+    ?>
+
 # June 13, 2025 StudyLog
 
 **PHP基礎**
