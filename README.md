@@ -1,5 +1,27 @@
 # 学びの記録
 
+# June 15, 2025 StudyLog
+
+**Paiza Dランクスキルチェックテスト×5問**
+
+**XAMPPの設定**
+php.ini
+- output_buffering = 4096 //バッファリング処理の有効化
+- error_reporting = E_ALL //エラーの出力レベル
+- default_charset = "UTF-8" //規定の文字コード
+- date.timezone = Asia/Tokyo //規定のタイムゾーン
+- display_errors = On //エラーの表示
+
+**SQL**
+- SELECT
+- FROM
+- WHERE
+
+**backlog**
+- サインアップ
+- 学習プロジェクト作成
+- ガントチャート作成
+
 # June 14, 2025 StudyLog
 //**break, continue, while, foreach**
 
