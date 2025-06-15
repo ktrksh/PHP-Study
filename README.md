@@ -3,6 +3,7 @@
 # June 15, 2025 StudyLog
 
 **Paiza Dランクスキルチェックテスト×5問**
+**Paiza PHP体験編完了**
 
 **XAMPPの設定**
 php.ini
