@@ -1,5 +1,49 @@
 # 学習記録
 
+# June 16, 2025 StudyLog
+**PHP基礎**
+**クラス**（類。ユーザーやモノの集合体という概念。例：人間）
+オブジェクト（具体的なモノ。例：田中）
+- PHPはクラスベースのオブジェクト指向プログラミング言語
+- JavaScriptはプロトタイプ指向、GoやRustは構造体を使用したオブジェクト指向プログラミング言語
+- Webアプリ開発の際、要件定義を行うと必要なクラスで作るべき概念が自ずと明らかになる。またその際、必要なことを書き出していく中で、プロジェクトに関わる全員が共通で使う統一された用語のことをユビキタス言語という。
+- クラスの命名記法
+  - キャメルケース：先頭小文字、続き単語の先頭大文字
+  - パスカルケース：全ての単語の先頭大文字
+- データとふるまい
+  - データ
+    - クラスに定義したデータをプロパティという（メンバ変数、フィールド、インスタンス変数ともいう）。プロパティのアクセス権の定義を行うものをアクセス修飾子という。PHPではpublic,protected,privateの3種類。明示的に指定しない場合publicとして定義される。publicはクラスの外に露出。privateはクラスの中。必要なければprivateにしておく。
+  - ふるまい
+    - メソッド（関数）を用いる。
+```php
+    <?php
+        class Human {
+            private $name;
+            private $birthday;
+            private $gender;
+
+            public function __construct($name, $birthday, $gender){
+                $this->name = $name;
+                $this->birthday = $birthday;
+                $this->gender = $gender;
+            }
+
+            public function walk() {
+                echo "{$this->name} is walking...<br/>";
+            }
+
+            public function eat() {
+                echo "eating...<br/>";
+            }
+        }
+        $human = new Human('田中', '1985年7月29日', '男');
+        //コンストラクタの呼び出し→オブジェクトが生成される→それを$humanに代入
+        $human->walk(); //メソッドの呼び出し
+        $human->eat(); //メソッドの呼び出し
+        echo '<br>';
+
+    ?>
+
 # June 15, 2025 StudyLog
 **PHP基礎**
 関数（ビルトイン関数、ユーザー定義関数）
