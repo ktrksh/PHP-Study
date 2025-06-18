@@ -184,9 +184,15 @@ SensitiveParameterValue — SensitiveParameterValue クラス
 __PHP_Incomplete_Class — __PHP_Incomplete_Class クラス
 
 **SQL基礎**
+4大構文　CRUD操作という言い方をするときは
+CREATE, READ, UPDATE, DELETEで、下記と同義。
 
 INSERT INTO 家計簿
     VALUES ('2024-02-25', '居住費', '3月の家賃', 0, 85000)
+
+SELECT 日付, 費目, 出金額
+FROM 家計簿
+WHERE 出金額 > 3000
 
 UPDATE 家計簿
     SET 出金額 = 90000
@@ -304,11 +310,6 @@ php.ini
 - default_charset = "UTF-8" //規定の文字コード
 - date.timezone = Asia/Tokyo //規定のタイムゾーン
 - display_errors = On //エラーの表示
-
-**SQL**
-- SELECT
-- FROM
-- WHERE
 
 **backlog**
 - サインアップ
