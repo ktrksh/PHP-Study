@@ -1,4 +1,15 @@
 # 学習記録
+
+# June 20, 2025 StudyLog
+**SQL**
+- 文の途中に改行を入れられる
+- 行の先頭、途中に半角の空白を入れることができる。
+- 1つのSQL文の終わりに「;」で区切りを明示できる。
+- コメントは「--」で1行、「/* */」で複数行
+- SELECTやWHEREはなどの命令に使う単語は予約語であり、テーブル名や列名に使用できない
+  - 大文字・小文字どちらで記述しても良いが、ほかの語句と判別しやすい書き方を心がける。
+  - 組織やプロジェクトでルールが定められていればそれに従う。
+
 # June 17, 2025 StudyLog
 
 **PHP基礎**
@@ -184,15 +195,15 @@ SensitiveParameterValue — SensitiveParameterValue クラス
 __PHP_Incomplete_Class — __PHP_Incomplete_Class クラス
 
 **SQL基礎**
-4大構文　CRUD操作という言い方をするときは
-CREATE, READ, UPDATE, DELETEで、下記と同義。
+4大構文
+CRUD操作という言い方をするときはCREATE, READ, UPDATE, DELETEだが、下記と同義。
 
 INSERT INTO 家計簿
     VALUES ('2024-02-25', '居住費', '3月の家賃', 0, 85000)
 
 SELECT 日付, 費目, 出金額
-FROM 家計簿
-WHERE 出金額 > 3000
+    FROM 家計簿
+    WHERE 出金額 > 3000
 
 UPDATE 家計簿
     SET 出金額 = 90000
