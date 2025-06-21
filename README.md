@@ -1,7 +1,6 @@
 # 学習記録
 
 # June 21, 2025 StudyLog
-
 **WebAPI**
 標準的なWebAPI作成手法
 REST: Representational State Transfer
