@@ -1,5 +1,12 @@
 # 学習記録
 
+# June 21, 2025 StudyLog
+
+**WebAPI**
+標準的なWebAPI作成手法
+REST: Representational State Transfer
+JSON: JavaScript Object Notation
+
 # June 20, 2025 StudyLog
 **SQL**
 - 文の途中に改行を入れられる
