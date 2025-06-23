@@ -1,8 +1,9 @@
 # 学習記録
 
 #June 23, 2025 StudyLog
-　　　　　　　　
+
 **SQL**
+
 - ''でくくってないリテラルは、数値情報
 - ''でくくられたリテラルは、基本的に文字列情報
 - ''でくくられ、かつ'2025-06-23'のような一定の形式で記述されたリテラルは日付情報として扱われる
@@ -55,8 +56,11 @@
 
 # June 21, 2025 StudyLog
 **WebAPI**
+
 標準的なWebAPI作成手法
+
 REST: Representational State Transfer
+
 JSON: JavaScript Object Notation
 
 # June 20, 2025 StudyLog
