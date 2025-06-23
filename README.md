@@ -1,5 +1,58 @@
 # 学習記録
 
+#June 23, 2025 StudyLog
+　　　　　　　　
+**SQL**
+- ''でくくってないリテラルは、数値情報
+- ''でくくられたリテラルは、基本的に文字列情報
+- ''でくくられ、かつ'2025-06-23'のような一定の形式で記述されたリテラルは日付情報として扱われる
+- ""は、SQLでは文字列リテラルとして用いることはできない
+
+**JavaScript**
+- クライアントサイドでHTMLを受け取ったあとに計算を行う唯一の言語
+- REPLを用いコンソールで計算を行うことができる
+- また、HTMLのbodyタグ内の末尾にscriptタグを作り、その中にJSを書いて、コンソールログを通してコンソールパネルに計算結果を出力させることもできる。
+
+**Shopify**
+- ロードマップ作成
+  1. 基礎知識把握
+  2. ストア構築
+    - ストア構築の準備
+    - 商品を登録
+    - コレクションを登録
+    - ブログ記事を作成
+    - サイトのデザイン選択
+    - テーマを編集する（セクション編）
+    - テーマを編集する（テーマ設定編）
+    - ティザーサイトを作成
+    - サイトのフォントを編集する
+    - アカウントページを作成する
+    - コンタクトフォーム を作成する
+    - Aboutページを作成する
+    - 規約を入力する
+    - メニューを編集する
+    - 送料を設定する
+    - 一般設定を編集する
+    - 各種設定を編集する
+    - 決済テストを行う
+    - 所有権を移行する
+    【準備するもの】
+    - Shopify パートナーアカウント作成用のメールアドレス
+    - Shopify ストアを運営するオーナー用のメールアドレス
+  3. Liquid編集 初級
+    - ブログを読み進める
+    - https://qiita.com/eijiSaito/items/c2ef910bd26ce208a2df
+    - https://qiita.com/eijiSaito/items/635897aecda877784113
+    - https://qiita.com/eijiSaito/items/5c3fa8e4b7fbfd5fa327
+    - https://qiita.com/eijiSaito/items/55cd5b877b9ef8b08d6b
+    - https://qiita.com/eijiSaito/items/5e890cab19f2e320a0b0
+    - https://qiita.com/eijiSaito/items/a785e707afd1b4304432
+  4. Liquid編集 中級
+    - Udemy Liquid基礎、テーマ開発を行うハンズオンの講座を進める
+    - https://shopify.github.io/liquid/basics/introduction/
+  5. 公式ドキュメントを熟読
+    - https://shopify.dev/
+
 # June 21, 2025 StudyLog
 **WebAPI**
 標準的なWebAPI作成手法
