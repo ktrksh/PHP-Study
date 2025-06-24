@@ -1,5 +1,93 @@
 # 学習記録
 
+#June 24, 2025 StudyLog
+
+**JavaScript**
+
+```javascript
+console.log("Hello World!!");
+//文字列は""もしくは''で囲む。文字列中に文字としての""を含めたい場合に''を用いることとする。
+//「;」は省略しても推定してくれる場合もあるが、細かくルールを把握する必要がでてくるので、「;」は必ず付けることとする。
+
+console.log("こんにちは、\n世界!");
+//文字列中の改行には「\n」
+
+console.log("a");
+console.log("b"); //console.log()は文字列を1行で出力するため、2度記述すると2行で出力される
+console.log(); //空行
+console.log("a");
+
+const name = "aaa"; //変数nameを宣言
+console.log(name + "という文字列"); //文字列の結合
+console.log(`これは、${name}です。`); //テンプレートリテラルという記法
+
+ブラウザのURLに「about:blank」で空のページ表示
+
+データ型
+
+number型：四則演算についてはPHPと同様
+String型：文字列型
+
+typeof 1 //1のデータ型を出力 'number' これは単項演算
+演算：計算
+「+」は二項演算
+
+"こんにちは".charAt(3) //'に'
+"こんにちは".charAt(6) //''(空文字列)
+"こんにちは".length //5
+
+clear() //コンソールをクリア
+
+真偽値（Boolean）型
+
+論理和（または）
+true || true :true
+true || false :true
+false || true :true
+false || false :false
+
+論理積（かつ）
+true && true :true
+true && false :false
+false && true :false
+false && false :false
+
+否定
+!true :false
+
+比較演算子
+1 < 2 :true
+1 === 1 :true
+"aa" === "ab" :true
+"aa" < "ab" :true //アルファベットの順番
+"aa" > "ab" :false
+1 == "1" :true //曖昧な比較 非推奨
+1 === "1" :false //厳密な比較 推奨
+
+typeof null :"object" //JSのバグ nullとでるべき
+null :null //無であることは決まってる
+undefined :undefined //無であることも決まってない
+
+配列
+[1, 2]
+[1, "2"]
+[1, "2"][0] //1
+[1, "2"][2] //undefined
+
+オブジェクト
+{ 名前: 'かしお', 身長: 170, 体重: 70}
+{名前: 'かしお', 身長: 170, 体重: 70}
+{email: "", account_name: "", 電話番号: 00000000}
+{email: '', account_name: '', 電話番号: 0}
+
+変数・定数：データにあだ名を付ける機能
+使い方：
+    1. 宣言：あだ名を作ること
+    2. 代入：あだ名と値を紐づけること
+    3. 参照：あだ名に紐づいている値を使うこと
+変数には「Unicode文字、数字、$、_」が使える
+
+
 #June 23, 2025 StudyLog
 
 **SQL**
