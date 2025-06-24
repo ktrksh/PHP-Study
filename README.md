@@ -20,14 +20,15 @@ console.log("a");
 const name = "aaa"; //変数nameを宣言
 console.log(name + "という文字列"); //文字列の結合
 console.log(`これは、${name}です。`); //テンプレートリテラルという記法
+```
 
 ブラウザのURLに「about:blank」で空のページ表示
 
-データ型
-
+**データ型**
 number型：四則演算についてはPHPと同様
 String型：文字列型
 
+```javascript
 typeof 1 //1のデータ型を出力 'number' これは単項演算
 演算：計算
 「+」は二項演算
@@ -37,7 +38,9 @@ typeof 1 //1のデータ型を出力 'number' これは単項演算
 "こんにちは".length //5
 
 clear() //コンソールをクリア
+```
 
+```javascript
 真偽値（Boolean）型
 
 論理和（または）
@@ -79,6 +82,7 @@ undefined :undefined //無であることも決まってない
 {名前: 'かしお', 身長: 170, 体重: 70}
 {email: "", account_name: "", 電話番号: 00000000}
 {email: '', account_name: '', 電話番号: 0}
+```
 
 変数・定数：データにあだ名を付ける機能
 使い方：
@@ -86,7 +90,39 @@ undefined :undefined //無であることも決まってない
     2. 代入：あだ名と値を紐づけること
     3. 参照：あだ名に紐づいている値を使うこと
 変数には「Unicode文字、数字、$、_」が使える
+
+```javascript
+    <script>
+      //変数
+      let x = 1; //Xの宣言、代入
+      console.log(x + 5); //xをconsole.log()の中で参照
+      console.log(1 + 5); //xをconsole.log()の中で参照
+      console.log(typeof x); //number
+      console.log(typeof 1); //number
+      let a = 100;
+      let b = 40;
+      console.log(a + b); //140
+      console.log(a * b); //4000
+      let c = "文字列";
+      let d = "です";
+      console.log(c + d); //文字列です
+      let e; //変数は、宣言と代入を分けることができる
+      console.log(e); //undefined
+      e = 2;
+      console.log(e); //2
+      e = "違う値";
+      console.log(e); //違う値
+
+      //定数
+      const f = 900;
+      console.log(f);
+
+      const g;
+      g=200;
+      console.log(g);
+    </script>
 ```
+
 
 #June 23, 2025 StudyLog
 
