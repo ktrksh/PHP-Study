@@ -1,5 +1,18 @@
 # 学習記録
 
+#June 25, 2025 StudyLog
+
+**SQL**
+代表的なデータ型
+- 数値
+  - 整数：INTEGER型、INT型
+  - 少数：DECIMAL型、NUMERIC型、FLOAT型、DOUBLE型、REAL型
+- 文字列
+  - 固定長：CHAR型
+  - 可変長：VARCHAR型
+- 日付と時刻
+  - ー：TIMESTAMP型（日付と時刻両方、DATETIME型、DATE型、TIME型
+
 #June 24, 2025 StudyLog
 
 **JavaScript**
