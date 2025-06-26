@@ -1,5 +1,35 @@
 # 学習記録
 
+#June 26, 2025 StudyLog
+**SQL**
+
+SELECT文の基本構文
+```sql
+SELECT 列名⋯ 
+    FROM テーブル名 --FROM句という
+    (WHERE修飾) --WHERE句という
+    (その他の修飾)
+--ここまでをSELECT文という
+
+SELECT 費目 AS ITEM, 入金額 AS RECEIVE, 出金額 AS PAY
+    FROM 家計簿 AS MONEYBOOK
+    WHERE 費目 = '給料'
+--このようにASを用いて、リストの列名やテーブル名を別名に定義することができる。
+
+```
+
+SELECT, UPDATE, DELETE, INSERTを４大命令とよび、**DML**（Data Manipulation Language）と総称する。基本的にこの命令を用い、あとはさまざまな修飾語を用いて、複雑なデータ操作が可能。
+
+
+データ型
+    - テーブルの各列には、データ型が指定されている。
+    - 列にはデータ型で指定された種類の情報のみが格納できる。
+    - DBMS製品によって利用可能なデータ型は異なる。
+
+char型とvarchar型の違い
+    - CHAR型：CHAR(10)に、文字列ARIGATOを登録すると、10バイト中、残りの3バイトが自動的に空白で埋められ、10バイト分の領域確保。郵便番号や社員番号など、格納データの桁数が一定のものが向く。
+    - VARCHAR型：VARCHAR(10)に、文字列ARIGATOを登録すると、7バイト分の領域確保。氏名や書籍名などが向く。
+
 #June 25, 2025 StudyLog
 
 **SQL**
