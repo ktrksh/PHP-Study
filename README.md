@@ -1,12 +1,20 @@
 # 学習記録
 
+*June 29, 2025 StudyLog
+**SQL**
+
+
 #June 28, 2025 StudyLog
 **SQL**
 4代命令をスッキリ学ぶ3つのコツ
 1. 構造と修飾語の全体像をしっかり把握する
 2. 4大命令の2通りの分類方法を理解する
+   1.
    - 検索系 SELECT
    - 更新系 UPDATE, DELETE, INSERT
+   2.
+   - 既存系 SELECT, UPDATE, DELETE
+   - 新規系 INSERT
 3. 共通するテーブル指定を先に書く
 
 #June 27, 2025 StudyLog
