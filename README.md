@@ -1,10 +1,6 @@
 # 学習記録
 
-*June 29, 2025 StudyLog
-**SQL**
-
-
-#June 28, 2025 StudyLog
+#June 30, 2025 StudyLog
 **SQL**
 4代命令をスッキリ学ぶ3つのコツ
 1. 構造と修飾語の全体像をしっかり把握する
@@ -16,6 +12,16 @@
    - 既存系 SELECT, UPDATE, DELETE
    - 新規系 INSERT
 3. 共通するテーブル指定を先に書く
+    各命令の固有部分を図示
+    SELECT 列名⋯ FROM テーブル名
+    UPDATE           テーブル名 SET 列名 = 値⋯
+    DELETE      FROM テーブル名
+    INSERT       INTO テーブル名 (列名⋯)VALUES（値⋯）
+    SQLを書く順序
+    1. 命令（SELECT・UPDATE・DELETE・INSERT）を記述する。
+    2. テーブル指定の部分を記述する。
+    3. テーブル指定より後ろの部分を記述する。
+    4. テーブル指定より前の部分を記述する。
 
 #June 27, 2025 StudyLog
 **SQL**
